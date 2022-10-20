@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="Seven Stars Bakery Redesign" content="Seven Stars Bakery Redesign">
+</head>
+    <h1>Responsive Redesign</h1>
+    <h2>Seven Stars Bakery</h2>
+    <body>
+        <img class="oldsite" src="./assets/oldsite.png" alt="Screenshot of existing Seven Stars site">
+        <h3>Part 1: Identifying Usability Problems</h3>
+        <p>I started by identifying problems with the existing Seven Stars Bakery Website. I found significant issues with its usability, learnability, memorability, layout, and aesthics. Specifically, I found the following issues:</p>
+        <ul>
+            <li>It looks outdated and has too much going on—there is no attention grabber</li>
+            <li>The texture in the menu bar paired with solid colors in the body contribute to its outdated nature</li>
+            <li>More than one picture is pixelated</li>
+            <li>There is no reading path that makes sense</li>
+            <li>There is inconsistency with elements i.e. “Pumpkin Spice Lattes Are Back!” isn’t a button, while the other cards are. Additionally, the cards that are buttons themselves aren’t all formatted the same</li>
+        </ul>
+        <p>Next, I ran the website through WebAIM WAIVE to detect accessibility problems. It found 3 images were missing alternative text, a contrast error with the white page in the middle of the page, and 30 alerts for broken or redundant links. I agree with the detected problems, and believe all of these problems are very solvable and would significantly improve accessibility.</p>
+        <h3>Part 2: Visual Redesign</h3> 
+        <p>Based on the problems described above, I created low-fidelity wireframes, a visual design style guide, and high-fidelity prototypes.</p> 
+        <h4>Low-Fidelity Wireframes: Mobile, Tablet, & Desktop</h4>
+        <img class="lofi" src="./assets/lofi.png" alt="Screenshot of existing Seven Stars site">
+        <h4>Key Annotations</h4>
+        <p>These wireframes address the problems described in part 1 by simplifyiing the website in the following ways:</p>
+        <ul>
+            <li>The new website is made up of 6 sections: the header, about, locations, loyalty, catering, and the footer</li>
+            <li>Each section has a clear and aestehtic background image or a simple black color</li>   
+            <li>All of the repetitive text and links have been removed</li>
+            <li>There is a clear top down reading path with consistency built into each section</li>   
+        </ul>
+
+        <h4>Visual Design Style Guide</h4>
+        <p>Before moving onto a more detailed prototype, I created the following style guide:</p>
+        <img class="styleguide" src="./assets/styleguide.png" alt="Style Guide">
+        <h4>High-Fidelity Prototyping</h4>
+        <p>Using Figma, I created 3 high-fidelity prototypes (for mobile, tablet, and desktop).</p>
+        <div class="hifi-container">
+            <div>
+                <h4>Mobile:</h4>
+                <img class="hifi" src="./assets/iPhone.png" alt="iPhone Prototype">
+            </div>
+            <div>
+                <h4>Tablet:</h4>
+                <img class="hifi" src="./assets/iPad.png" alt="iPad Prototype">
+            </div>
+            <div>
+                <h4>Desktop:</h4>
+                <img class="hifi" src="./assets/laptop.png" alt="Laptop Prototype">
+            </div>
+        </div>
+        <h4>Key Annotations: </h4>
+        <p>General Styling</p>
+        <ul>
+            <li>Set border-box (box-sizing: border-box).</li>
+            <li>Get rid of default margins (margins: 0).</li>
+            <li>Media elements are repalaced elements which have a width based on the media, to prevent media from expanding beyond its container, and take up a row (display: block; max-width: 100%).</li>
+        </ul>
+
+        <p>Elements</p>
+        <ul>
+            <li>Use flexbox for each element (see bracket to the left) because it provides a more efficient way to lay out, align and distribute space among items in a container.</li>
+            <li>Each prototype webpage (iPhone, iPad, Laptop) contains seven elements.</li>
+            <li>Each element will contain a background image, and will also contain a combination of text, another image, and/or a button.</li>
+        </ul>
+
+        <p>Size Adjustments</p>
+        <ul>
+            <li>Use view width and view height for elements that need major resizing when shown on mobile vs. tablet vs. desktop.</li>
+        </ul>
+
+        <p>User Interactions</p>
+        <ul>
+            <li>If a user clicks a button for “Order Now”, they will be brought to the online ordering POS system that Seven Stars Bakery uses.</li>
+            <li>If a user clicks the button for logging in / signing up for the Loyalty program, they will be directed to the same POS system that takes care of rewards.</li>
+            <li>If a user clicks any of the social media links, they will be brought to the corresponding links.</li>
+        </ul>
+
+
+        <a href="https://happycheetah123.github.io/seven-stars/" target="_blank"><h3 class="final">Part 3: Responsive Redesign</h3></a>
+        <p>Using the high-fidelity prototypes, I created the website linked above!</p>
+    </body>
+</html>
